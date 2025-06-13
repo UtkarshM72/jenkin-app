@@ -17,7 +17,6 @@ pipeline {
         
 	stage('Login to Docker Hub') {
             steps {
-                # sh 'echo "<dockerhub-token>" | docker login -u <dockerhub-username> --password-stdin'
                 sh 'echo "dckr_pat_jws5CRdpGSO2Yc1RwK9VN5I5jSc" | docker login -u utkarshm72 --password-stdin'
             }
         
